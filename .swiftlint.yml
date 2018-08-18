@@ -1,5 +1,5 @@
 included:
-  - MyRssReader/
+  - RxNotificationCenterExample
 force_cast: warning
 force_try:
   severity: warning

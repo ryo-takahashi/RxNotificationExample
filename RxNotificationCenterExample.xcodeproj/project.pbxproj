@@ -10,9 +10,12 @@
 		223EBA747A8EBBF853F57C46 /* Pods_RxNotificationCenterExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F21C199D8A0B63E20489380 /* Pods_RxNotificationCenterExample.framework */; };
 		5ABBCF0C2127D68400ABAF47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBCF0B2127D68400ABAF47 /* AppDelegate.swift */; };
 		5ABBCF0E2127D68400ABAF47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBCF0D2127D68400ABAF47 /* ViewController.swift */; };
-		5ABBCF112127D68400ABAF47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ABBCF0F2127D68400ABAF47 /* Main.storyboard */; };
 		5ABBCF132127D68500ABAF47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ABBCF122127D68500ABAF47 /* Assets.xcassets */; };
 		5ABBCF162127D68500ABAF47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ABBCF142127D68500ABAF47 /* LaunchScreen.storyboard */; };
+		5ABBCF1E2127E00200ABAF47 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABBCF1D2127E00200ABAF47 /* ViewController.xib */; };
+		5ABBCF202127E4A700ABAF47 /* DisableNotificationCoverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABBCF1F2127E4A700ABAF47 /* DisableNotificationCoverView.xib */; };
+		5ABBCF222127E5AA00ABAF47 /* DisableNotificationCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBCF212127E5AA00ABAF47 /* DisableNotificationCoverView.swift */; };
+		5ABBCF26212802E200ABAF47 /* RxNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABBCF25212802E200ABAF47 /* RxNotificationCenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +23,13 @@
 		5ABBCF082127D68400ABAF47 /* RxNotificationCenterExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxNotificationCenterExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ABBCF0B2127D68400ABAF47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5ABBCF0D2127D68400ABAF47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5ABBCF102127D68400ABAF47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5ABBCF122127D68500ABAF47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5ABBCF152127D68500ABAF47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5ABBCF172127D68500ABAF47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ABBCF1D2127E00200ABAF47 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		5ABBCF1F2127E4A700ABAF47 /* DisableNotificationCoverView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisableNotificationCoverView.xib; sourceTree = "<group>"; };
+		5ABBCF212127E5AA00ABAF47 /* DisableNotificationCoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableNotificationCoverView.swift; sourceTree = "<group>"; };
+		5ABBCF25212802E200ABAF47 /* RxNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxNotificationCenter.swift; sourceTree = "<group>"; };
 		B3C168CFA0BBB1163EA5F37F /* Pods-RxNotificationCenterExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNotificationCenterExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxNotificationCenterExample/Pods-RxNotificationCenterExample.debug.xcconfig"; sourceTree = "<group>"; };
 		F424AD4434FDCC9B956A60B1 /* Pods-RxNotificationCenterExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNotificationCenterExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxNotificationCenterExample/Pods-RxNotificationCenterExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,14 +75,33 @@
 		5ABBCF0A2127D68400ABAF47 /* RxNotificationCenterExample */ = {
 			isa = PBXGroup;
 			children = (
-				5ABBCF0B2127D68400ABAF47 /* AppDelegate.swift */,
-				5ABBCF0D2127D68400ABAF47 /* ViewController.swift */,
-				5ABBCF0F2127D68400ABAF47 /* Main.storyboard */,
-				5ABBCF122127D68500ABAF47 /* Assets.xcassets */,
-				5ABBCF142127D68500ABAF47 /* LaunchScreen.storyboard */,
+				5ABBCF242127E5E200ABAF47 /* resources */,
+				5ABBCF232127E5DB00ABAF47 /* sources */,
 				5ABBCF172127D68500ABAF47 /* Info.plist */,
 			);
 			path = RxNotificationCenterExample;
+			sourceTree = "<group>";
+		};
+		5ABBCF232127E5DB00ABAF47 /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				5ABBCF0B2127D68400ABAF47 /* AppDelegate.swift */,
+				5ABBCF0D2127D68400ABAF47 /* ViewController.swift */,
+				5ABBCF212127E5AA00ABAF47 /* DisableNotificationCoverView.swift */,
+				5ABBCF25212802E200ABAF47 /* RxNotificationCenter.swift */,
+			);
+			path = sources;
+			sourceTree = "<group>";
+		};
+		5ABBCF242127E5E200ABAF47 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				5ABBCF1D2127E00200ABAF47 /* ViewController.xib */,
+				5ABBCF1F2127E4A700ABAF47 /* DisableNotificationCoverView.xib */,
+				5ABBCF142127D68500ABAF47 /* LaunchScreen.storyboard */,
+				5ABBCF122127D68500ABAF47 /* Assets.xcassets */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 		F0D4891A7B8B67EACA1B516A /* Pods */ = {
@@ -148,9 +173,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ABBCF202127E4A700ABAF47 /* DisableNotificationCoverView.xib in Resources */,
 				5ABBCF162127D68500ABAF47 /* LaunchScreen.storyboard in Resources */,
+				5ABBCF1E2127E00200ABAF47 /* ViewController.xib in Resources */,
 				5ABBCF132127D68500ABAF47 /* Assets.xcassets in Resources */,
-				5ABBCF112127D68400ABAF47 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,21 +229,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ABBCF0E2127D68400ABAF47 /* ViewController.swift in Sources */,
+				5ABBCF222127E5AA00ABAF47 /* DisableNotificationCoverView.swift in Sources */,
 				5ABBCF0C2127D68400ABAF47 /* AppDelegate.swift in Sources */,
+				5ABBCF26212802E200ABAF47 /* RxNotificationCenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5ABBCF0F2127D68400ABAF47 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5ABBCF102127D68400ABAF47 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5ABBCF142127D68500ABAF47 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -351,7 +371,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9PHSZKL64F;
 				INFOPLIST_FILE = RxNotificationCenterExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.k0uhashi.RxNotificationCenterExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -367,7 +390,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9PHSZKL64F;
 				INFOPLIST_FILE = RxNotificationCenterExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.k0uhashi.RxNotificationCenterExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
