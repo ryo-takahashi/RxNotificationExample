@@ -7,7 +7,6 @@ class RxNotificationCenter {
 
     let authorizationStatus = PublishRelay<UNAuthorizationStatus>()
 
-    private let disposeBag = DisposeBag()
     private init() {}
 
     func updateAuthorizationStatus() {
